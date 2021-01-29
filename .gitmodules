@@ -1,0 +1,6 @@
+[submodule "comm/gr-ieee802-11"]
+	path = comm/gr-ieee802-11
+	url = git@github.com:bastibl/gr-ieee802-11.git
+[submodule "radio_frequency/gr-ieee80211-11"]
+	path = radio_frequency/gr-ieee80211-11
+	url = git@github.com:bastibl/gr-ieee802-11.git
