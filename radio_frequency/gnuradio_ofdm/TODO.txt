@@ -1,0 +1,2 @@
+TODO:
+- Check why the signal isn't transmitting at sample rate of 2.4MHz
