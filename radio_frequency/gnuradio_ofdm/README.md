@@ -73,3 +73,9 @@ Test your installation by running GNURadio ~/prefix-3.8/src/gr-ieee-80211/exampl
 ```
 $ gnuradio-companion
 ```
+
+# Modification
+If you modify a module, to rebuild, use the following command (```gr-ieee-80211``` is used as an example of rebuilding just one "folder":
+```
+$ pybombs -p ~/prefix-3.8/ rebuild gr-ieee-80211
+```
