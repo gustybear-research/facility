@@ -6,15 +6,21 @@ antenna = phased.IsotropicAntennaElement('BackBaffled',true); %antenna type (lim
 %%% INPUT %%%
 fc = 10e9;
 
-%Add subRow, subColumn, replRow, replColumn
+%%% Define subarray dimensions
+subarray_Col = 2;
+subarray_Row = 2;
 
-%%%%%%%%%%%%%%
+%%% Define replicated dimensions (how many subarrays?)
+replicate_Row = 3;
+replicate_Col = 2;
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%% Create array
-sub_array = phased.URA('Size',[2 3],'ElementSpacing',0.5*c/fc,'Element',antenna);
+sub_array = phased.URA('Size',[subarray_Col, subarray_Row],'ElementSpacing',0.5*c/fc,'Element',antenna);
 % viewArray(sub_array)
 replarray = phased.ReplicatedSubarray('Subarray',sub_array,...
-    'GridSize',[2, 2]);
+    'GridSize',[replicate_Col, replicate_Row]);
 viewArray(replarray)
 
 %%% Plot radiation pattern at a given frequency.
