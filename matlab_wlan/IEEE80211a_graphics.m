@@ -8,7 +8,9 @@ function IEEE80211a_graphics(s, ax, firstcall, params);
 % params: modulation parameters
  
 % handles
-haxes = cell2mat(struct2cell(ax));
+% haxes = cell2mat(struct2cell(ax));
+A=struct2cell(ax); 
+haxes=[A{:}]'; 
 fig = get(haxes(1), 'parent');
  
 % Create structure, d, containing all data required by plotting functions
@@ -17,11 +19,12 @@ d = guidata(fig);
 if firstcall
     
     % set axes-related handles
+    d.plotfn_handles = {}; 
     d.axes_handles = haxes;
     d.num_axes = length(d.axes_handles);
     d.axes_tags = get(d.axes_handles, 'tag');
     for n = 1:d.num_axes
-        d.plotfn_handles(n) = str2func(['plot_' d.axes_tags{n}]);
+        d.plotfn_handles{n} = str2func(['plot_' d.axes_tags{n}]);
     end
     
     d.frame_number = 1;
@@ -55,7 +58,7 @@ d.ber = calcBER(s.txbits, s.rxbits, params.bitsPerBlock(s.mode), link_delay);
  
 % alternative: call each function explicitly, with its axes handle
 for i = 1:d.num_axes
-    feval(d.plotfn_handles(i), firstcall, d.axes_handles(i), d);   
+    feval(d.plotfn_handles{i}, firstcall, d.axes_handles(i), d);   
 end
  
  

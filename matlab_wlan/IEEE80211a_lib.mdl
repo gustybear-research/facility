@@ -310,7 +310,7 @@ Library {
 	  Ports			  [1, 1]
 	  Position		  [105, 62, 180, 108]
 	  ShowName		  off
-	  SourceBlock		  "commdigbbndam2/Rectangular QAM\nDemodulator"
+	  SourceBlock		  "commdigbbndam3/Rectangular QAM\nDemodulator"
 "\nBaseband"
 	  SourceType		  "Rectangular QAM Demodulator Baseband"
 	  M			  "modOrder"
@@ -329,7 +329,7 @@ Library {
 	  Ports			  [1, 1]
 	  Position		  [225, 137, 300, 183]
 	  ShowName		  off
-	  SourceBlock		  "commdigbbndam2/Rectangular QAM\nModulator\n"
+	  SourceBlock		  "commdigbbndam3/Rectangular QAM\nModulator\n"
 "Baseband"
 	  SourceType		  "Rectangular QAM Modulator Baseband"
 	  M			  "modOrder"
@@ -581,7 +581,7 @@ Library {
 	  Ports			  [1, 1]
 	  Position		  [580, 68, 655, 112]
 	  ShowName		  off
-	  SourceBlock		  "commdigbbndam2/Rectangular QAM\nModulator\n"
+	  SourceBlock		  "commdigbbndam3/Rectangular QAM\nModulator\n"
 "Baseband"
 	  SourceType		  "Rectangular QAM Modulator Baseband"
 	  M			  "modOrder"
