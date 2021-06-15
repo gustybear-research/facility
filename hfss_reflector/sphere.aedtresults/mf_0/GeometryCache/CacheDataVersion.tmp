@@ -1,0 +1,8 @@
+$begin 'CacheDataVersion'
+	DataVersion=3
+$end 'CacheDataVersion'
+$begin 'VariableValues'
+	box_X='1000mm'
+	box_Y='1000mm'
+	box_Z='1000mm'
+$end 'VariableValues'
