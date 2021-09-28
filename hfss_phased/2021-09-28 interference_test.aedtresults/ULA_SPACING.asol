@@ -1,0 +1,123 @@
+$begin '$base_index$'
+  $begin 'properties'
+    all_levels=000000000000
+    time(year=000000002021, month=000000000009, day=000000000028, hour=000000000006, min=000000000053, sec=000000000037)
+    version=000000000000
+  $end 'properties'
+  $begin '$base_index$'
+    $index$(pos=000000003100, lin=000000000102, lvl=000000000000)
+  $end '$base_index$'
+$end '$base_index$'
+$begin 'SolutionBlock2'
+	SolutionName='AdaptivePass'
+	SolutionID=103
+	V=1638
+	$begin 'States'
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(28000000000)
+		SolutionType=6
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=-1
+	KeepAllFastSweepFields=false
+$end 'SolutionBlock2'
+$begin 'BlockMapName'
+	FileHeader='SolutionBlock1'
+	'SolutionKey(SimSetup=102, Instance=\'SetupDefinition\', Solution=-1, VersionID=1638)'='SolutionBlock5'
+	'SolutionKey(SimSetup=102, Instance=\'SolutionDefinition\', Solution=103, VersionID=1638)'='SolutionBlock2'
+	'SolutionKey(SimSetup=102, Instance=\'SolutionDefinition\', Solution=104, VersionID=1638)'='SolutionBlock3'
+	'SolutionKey(SimSetup=102, Instance=\'SolutionDefinition\', Solution=107, VersionID=1638)'='SolutionBlock4'
+$end 'BlockMapName'
+$begin 'SolutionBlock3'
+	SolutionName='LastAdaptive'
+	SolutionID=104
+	V=1638
+	$begin 'States'
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(28000000000)
+		SolutionType=6
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=-1
+	KeepAllFastSweepFields=false
+$end 'SolutionBlock3'
+$begin 'SolutionBlock4'
+	SolutionName='Sweep'
+	SolutionID=107
+	V=1638
+	$begin 'States'
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(14000000000, 16000000000, 18000000000, 20000000000, 22000000000, 24000000000, 26000000000, 28000000000)
+		SolutionType=5
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=0
+	KeepAllFastSweepFields=false
+$end 'SolutionBlock4'
+$begin 'SolutionBlock5'
+	SimSetupID=102
+	SimSetupName='Setup1'
+	VersionID=1638
+	IsImported=false
+	IsTable=false
+	SolveSetupID=0
+	MeshAssemVersionID=0
+	$begin 'NextAssemVersionID'
+		NextUniqueID=1
+		MoveBackwards=false
+	$end 'NextAssemVersionID'
+	$begin 'ADP'
+	$end 'ADP'
+	$begin 'SU'
+	$end 'SU'
+	$begin 'MI'
+	$end 'MI'
+$end 'SolutionBlock5'
+$begin 'SolutionBlock1'
+	ProductName=''
+	CircuitName='ULA_SPACING'
+	VersionID=1638
+	PostProcess=false
+	LossLess=true
+	NextUniqueID=1699
+	MoveBackwards=false
+	$begin 'VariationIDs'
+		Map(V='arraySpaceL=\'2.6499999999999999mm\' feedLength=\'2.8205mm\' feedWidth=\'0.29999999999999999mm\' fiftyOhmW=\'0.84999999999999998mm\' patchL=\'2.5329999999999999mm\' patchW=\'3.3490000000000002mm\' qwtWidth=\'0.29999999999999999mm\' subX=\'33mm\' subY=\'35mm\' subZ=\'0.29999999999999999mm\'', ID=1692)
+	$end 'VariationIDs'
+	$begin 'LinkedDataList'
+	$end 'LinkedDataList'
+	MeshAssemVersionID=0
+	$begin 'NextAssemVersionID'
+		NextUniqueID=1
+		MoveBackwards=false
+	$end 'NextAssemVersionID'
+	$begin 'MI'
+	$end 'MI'
+$end 'SolutionBlock1'
+$begin '$index$'
+	$begin '$index$'
+		SolutionBlock1(pos=2377, lin=81, lvl=0)
+		SolutionBlock2(pos=370, lin=1, lvl=0)
+		BlockMapName(pos=730, lin=19, lvl=0)
+		SolutionBlock3(pos=1233, lin=26, lvl=0)
+		SolutionBlock4(pos=1593, lin=44, lvl=0)
+		SolutionBlock5(pos=2036, lin=62, lvl=0)
+		$base_index$(pos=0, lin=1, lvl=0)
+		$index$(pos=3100, lin=102, lvl=0)
+	$end '$index$'
+$end '$index$'
