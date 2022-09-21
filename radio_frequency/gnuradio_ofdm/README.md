@@ -74,6 +74,14 @@ Test your installation by running GNURadio ~/prefix-3.8/src/gr-ieee-80211/exampl
 $ gnuradio-companion
 ```
 
+# TX/RX Scripts
+Install the TX/RX scripts by downloading them from intrepid (TX) and excalibur (RX).
+
+If the destination computer is connected to LAN and intrepid/excalibur are active, you can copy the files with the following on the destination computer:
+```
+$ scp yao@<IP_ADDRESS_TX/RX> ~/works* ~/
+```
+
 # Modification
 If you modify a module, to rebuild, use the following command (```gr-ieee-80211``` is used as an example of rebuilding just one "folder":
 ```
