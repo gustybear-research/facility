@@ -21,7 +21,7 @@ $ pybombs auto-config
 Add the GNURadio recipes using Pybomb and store it in the folder ~/prefix-3.8.
 ```
 $ pybombs recipes add-defaults
-$ pybombs prefix init ~/prefix-3.8 -R gnuradio-default
+$ pybombs prefix init ~/prefix-3.8 -R gnuradio38
 ```
 
 Load the new shell/terminal environment.
